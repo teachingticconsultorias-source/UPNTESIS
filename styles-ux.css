@@ -1,0 +1,346 @@
+:root {
+  --upn: #e31837;
+  --ink: #20242c;
+  --muted: #667085;
+  --line: #e7e9ee;
+  --soft: #f7f8fa;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  color: var(--ink);
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ux-shell {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* HERO */
+
+.ux-hero {
+  text-align: center;
+  padding: 78px 20px 52px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+}
+
+.ux-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--upn);
+}
+
+.ux-hero h1 {
+  max-width: 900px;
+  margin: 14px auto 18px;
+  font-size: clamp(38px, 5vw, 66px);
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+}
+
+.ux-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* NAV */
+
+.ux-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.ux-nav a {
+  padding: 11px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--ink);
+  background: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.ux-nav a:hover {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.ux-nav a.primary {
+  background: var(--upn);
+  color: #fff;
+  border-color: var(--upn);
+}
+
+/* SECCIONES */
+
+.ux-section {
+  padding: 72px 0;
+}
+
+.ux-section.alt {
+  background: var(--soft);
+}
+
+.ux-heading {
+  max-width: 760px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.ux-heading h2 {
+  margin: 8px 0 12px;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: -0.03em;
+}
+
+.ux-heading p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* TARJETAS */
+
+.ux-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.ux-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.04);
+}
+
+.ux-card h3 {
+  margin: 8px 0 10px;
+  font-size: 19px;
+}
+
+.ux-card p,
+.ux-card li {
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+.ux-num {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #fff1f3;
+  color: var(--upn);
+  font-weight: 800;
+}
+
+/* ROCEF */
+
+.rocef {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.rocef .ux-card {
+  text-align: center;
+  padding: 22px 14px;
+}
+
+.rocef strong {
+  display: block;
+  font-size: 30px;
+  color: var(--upn);
+  margin-bottom: 7px;
+}
+
+/* FLUJOS */
+
+.ux-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 28px auto;
+}
+
+.ux-step {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 12px 15px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.ux-arrow {
+  color: #98a2b3;
+}
+
+/* CALLOUT */
+
+.ux-callout {
+  max-width: 900px;
+  margin: 30px auto 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--upn);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+/* PROMPT */
+
+.ux-prompt {
+  white-space: pre-wrap;
+  background: #171a21;
+  color: #f8fafc;
+  border-radius: 18px;
+  padding: 22px;
+  line-height: 1.6;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+/* BOTONES */
+
+.ux-btn {
+  display: inline-block;
+  background: var(--upn);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.ux-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+/* FOOTER */
+
+.ux-footer {
+  text-align: center;
+  border-top: 1px solid var(--line);
+  padding: 34px 20px 44px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.ux-footer strong {
+  display: block;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .ux-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rocef {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ux-hero {
+    padding-top: 58px;
+  }
+
+  .ux-hero h1 {
+    font-size: clamp(36px, 7vw, 54px);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 620px) {
+  .ux-shell {
+    padding: 0 18px;
+  }
+
+  .ux-grid,
+  .rocef {
+    grid-template-columns: 1fr;
+  }
+
+  .ux-section {
+    padding: 54px 0;
+  }
+
+  .ux-hero {
+    padding: 48px 18px 38px;
+  }
+
+  .ux-hero h1 {
+    font-size: 38px;
+  }
+
+  .ux-hero p {
+    font-size: 16px;
+  }
+
+  .ux-nav {
+    gap: 8px;
+  }
+
+  .ux-nav a {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .ux-card {
+    padding: 20px;
+  }
+
+  .ux-flow {
+    flex-direction: column;
+  }
+
+  .ux-arrow {
+    transform: rotate(90deg);
+  }
+
+  .ux-prompt {
+    font-size: 13px;
+  }
+}
