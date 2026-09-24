@@ -1,39 +1,32 @@
-UPN TESIS – ACTUALIZACIÓN DE FEEDBACK
+UPN TESIS – PAQUETE COMPLETO
 
-Este paquete evita reemplazar todo tu index.html.
+ARCHIVOS INCLUIDOS
+1. feedback-upn.js
+2. politica-uso-ia-upn-v2.pdf
+3. INSTRUCCIONES.txt
 
-ARCHIVO PRINCIPAL
-- feedback-upn.js
-
-PASOS
-1. Sube feedback-upn.js a la raíz de tu repositorio UPNTESIS, al mismo nivel que index.html.
-2. Abre index.html en GitHub y pulsa Edit.
-3. Busca la última línea </body>.
-4. JUSTO ANTES de </body>, pega esta única línea:
+CÓMO SUBIRLO A GITHUB
+1. Sube feedback-upn.js a la raíz del repositorio, al mismo nivel que index.html.
+2. Sube politica-uso-ia-upn-v2.pdf también a la raíz del repositorio.
+3. Edita index.html.
+4. Busca </body>.
+5. Justo ANTES de </body>, pega:
 
 <script src="feedback-upn.js"></script>
 
-5. Guarda/Commit changes.
-6. Espera el nuevo despliegue de Vercel y revisa la web.
+6. Guarda los cambios (Commit changes).
+7. Espera el despliegue de Vercel.
 
-QUÉ CAMBIA
-- Asesoría por equipos: añade la indicación de grabar la asesoría y mencionar todas las oportunidades de mejora.
-- Evaluaciones: aclara que los dos entregables evaluativos son Evaluación Parcial y Evaluación Final.
-- Criterio 08: incorpora comunicación paraverbal, cámara encendida y condiciones de iluminación/audio/encuadre.
-- Herramientas de IA: añade política institucional de uso ético y responsable.
-- Añade qué puede y qué no debe hacer el docente con IA.
-- Añade orientación frente a sospecha de uso inadecuado de IA.
-- Añade orientación sobre declaración de uso de IA en tesis.
-- ROCEF + Copilot: añade advertencia de protección de datos.
+QUÉ VERÁS EN LA WEB
+- En Asesoría por equipos: indicación de grabar la asesoría y mencionar todas las oportunidades de mejora.
+- En el criterio 04: Evaluación Parcial y Evaluación Final como los dos entregables evaluativos.
+- En el criterio 08: comunicación verbal, paraverbal y no verbal; cámara encendida; iluminación, encuadre y audio.
+- En Herramientas de IA: una sección visible que dice “Antes de utilizar IA en la asesoría, revisa la política institucional”.
+- La sección explica qué puede y qué no debe hacer el docente con IA.
+- Incluye orientación ante sospecha de uso de IA.
+- Incluye orientación para tesis y declaración de uso de IA.
+- Incluye el botón “Revisar política completa de IA – UPN”, que abre el PDF completo.
+- En ROCEF + Copilot: recordatorio de protección de datos.
 
 IMPORTANTE
-El archivo no cambia colores, navegación, tipografías ni estructura visual general. Reutiliza las clases CSS que ya existen en la web.
-
-POLÍTICA IA
-Contenido basado en:
-Política para el uso adecuado de la Inteligencia Artificial en la Universidad Privada del Norte
-Código UPN-PLC-0013
-Versión 2
-Fecha de publicación: 23/04/2026
-
-Para mostrar el PDF completo dentro de la web será necesario subir también el PDF institucional al repositorio. Este paquete incorpora las orientaciones de la política, pero no incrusta el PDF porque el documento debe conservarse como archivo independiente.
+No se modifica el diseño general de la web. El script reutiliza las clases visuales existentes.
