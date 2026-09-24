@@ -1,0 +1,39 @@
+UPN TESIS – ACTUALIZACIÓN DE FEEDBACK
+
+Este paquete evita reemplazar todo tu index.html.
+
+ARCHIVO PRINCIPAL
+- feedback-upn.js
+
+PASOS
+1. Sube feedback-upn.js a la raíz de tu repositorio UPNTESIS, al mismo nivel que index.html.
+2. Abre index.html en GitHub y pulsa Edit.
+3. Busca la última línea </body>.
+4. JUSTO ANTES de </body>, pega esta única línea:
+
+<script src="feedback-upn.js"></script>
+
+5. Guarda/Commit changes.
+6. Espera el nuevo despliegue de Vercel y revisa la web.
+
+QUÉ CAMBIA
+- Asesoría por equipos: añade la indicación de grabar la asesoría y mencionar todas las oportunidades de mejora.
+- Evaluaciones: aclara que los dos entregables evaluativos son Evaluación Parcial y Evaluación Final.
+- Criterio 08: incorpora comunicación paraverbal, cámara encendida y condiciones de iluminación/audio/encuadre.
+- Herramientas de IA: añade política institucional de uso ético y responsable.
+- Añade qué puede y qué no debe hacer el docente con IA.
+- Añade orientación frente a sospecha de uso inadecuado de IA.
+- Añade orientación sobre declaración de uso de IA en tesis.
+- ROCEF + Copilot: añade advertencia de protección de datos.
+
+IMPORTANTE
+El archivo no cambia colores, navegación, tipografías ni estructura visual general. Reutiliza las clases CSS que ya existen en la web.
+
+POLÍTICA IA
+Contenido basado en:
+Política para el uso adecuado de la Inteligencia Artificial en la Universidad Privada del Norte
+Código UPN-PLC-0013
+Versión 2
+Fecha de publicación: 23/04/2026
+
+Para mostrar el PDF completo dentro de la web será necesario subir también el PDF institucional al repositorio. Este paquete incorpora las orientaciones de la política, pero no incrusta el PDF porque el documento debe conservarse como archivo independiente.
